@@ -1,0 +1,31 @@
+   /* Define the custom font */
+@font-face {
+  font-family: 'VT323';
+  src: url('../Assets/VT323/VT323-Regular.ttf') format('opentype'); /* Ensure path and format are correct */
+}
+@font-face {
+  font-family: 'PPNeueBit-Bold';
+  src: url('../Assets/PPNeueBit-Bold.otf') format('opentype'); /* Ensure path and format are correct */
+}
+@font-face {
+  font-family: 'PPMondwest';
+  src: url('../Assets/PPMondwest-Regular.otf') format('opentype'); /* Ensure path and format are correct */
+}
+
+h1 {
+    font-size: calc(10px + 5vmin);
+  }
+
+p {
+  line-height: 140%;
+}
+
+
+
+/* Apply the custom font to h1 with responsive font size */
+h1.big {
+  font-size: calc(10px + 19vmin); /* Responsive font size */
+  line-height: 58%;
+  margin: 0; /* Remove default margin */
+  font-family: 'PPNeueBit-Bold', sans-serif; /* Use custom font and fallback to sans-serif */
+}

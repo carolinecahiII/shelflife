@@ -1,0 +1,68 @@
+.App-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.App-header a {
+    text-transform: uppercase;
+    font-size: calc(10px + .5vmin);
+    padding: 2.5vw 2vw;
+    text-align: center;
+  }
+
+.menu {
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-top: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: stretch;
+  border-radius: 0 0 20px 20px;
+  height:max-content;
+  overflow: hidden;
+}
+
+
+.menu a:hover {
+  background-color: rgb(207, 185, 176);
+}
+
+.menu > *:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+.mark {
+  display: flex;
+  background-image: url('../Assets/libbutton.gif');
+  background-size: cover;
+  background-position: center;
+  width: 150px;
+  color: white;
+  font-family: monospace;
+  font-size: 150px; 
+  font-weight: bold;
+  line-height: 1.2; 
+}
+
+.mark:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+
+/* @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  } */

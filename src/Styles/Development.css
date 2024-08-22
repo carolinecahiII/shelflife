@@ -1,0 +1,72 @@
+
+.development-section {
+  display: flex;
+  justify-content: space-between; /* Space between left and right sections */
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.left-content {
+  width: 50%;
+}
+h3{
+  margin:auto;
+  font-family: 'PPMondwest';
+}
+h2{font-family: 'PPMondwest';}
+.right-content {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Add space between images */
+}
+
+.right-content .development-image {
+  width: 100%; /* Ensure images take up full width of the right section */
+  height: auto;
+}
+
+.development-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.development-section p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.development-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.development-section li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Scrolling image styles */
+.scrolling-image {
+  width: 100%;
+  overflow: hidden; /* Hide the overflow to create the illusion */
+  position: relative;
+  height: 300px; /* Adjust the height as needed */
+}
+
+.scrolling-image img {
+  width: auto; /* Allow the image width to be determined by the content */
+  height: 100%; /* Make the image fill the container height */
+  animation: scroll 20s linear infinite; /* Adjust the duration for speed */
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scroll {
+  0% {
+      transform: translateX(100%); /* Start with the image completely off the left */
+  }
+  100% {
+      transform: translateX(-100%); /* Move the image off to the right */
+  }
+}
